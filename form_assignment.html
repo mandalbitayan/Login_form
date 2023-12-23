@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        background-color: blue;
+        width: 100vw;
+        height: 100vh;
+      }
+      /* @media only screen and (max-width: 455px) {
+        body {
+          background-color: brown;
+        }
+      } */
+      section {
+        background-image: url("https://plus.unsplash.com/premium_photo-1669211270127-555570f66011?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2hyaXN0bWFzfGVufDB8MHwwfHx8MQ%3D%3D");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-position: center;
+      }
+      .login-form {
+        width: 370px;
+        height: 420px;
+        background-color: blanchedalmond;
+        border-radius: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background: transparent;
+        backdrop-filter: blur(8px);
+        border: 1px solid rgba(239, 233, 233, 0.5);
+      }
+      h2 {
+        color: white;
+      }
+      div > input {
+        width: 165px;
+        border: none;
+        outline: none;
+        padding: 8px 20px 10px 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      p {
+        position: relative;
+        right: 10%;
+        top: 0px;
+        padding-top: 0;
+        margin-top: 0;
+        color: white;
+      }
+      .login-but {
+        border: none;
+        font-size: 15px;
+        padding: 5px 42px;
+        text-align: center;
+        margin: 12px 0 0 0;
+        border-radius: 4px;
+        background-color: rgb(8, 8, 92);
+        color: white;
+        cursor: pointer;
+        font-weight: 600;
+      }
+      h4 {
+        color: white;
+        text-align: center;
+      }
+      .button {
+        display: flex;
+        gap: 15px;
+        justify-content: space-between;
+      }
+      .twi {
+        color: white;
+        background-color: rgb(3, 53, 160);
+        text-align: center;
+        padding: 2px 30px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: 600;
+        outline: none;
+      }
+      .ins {
+        color: white;
+        font-size: 15px;
+        background-color: rgb(208, 18, 148);
+        text-align: center;
+        padding: 8px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: 600;
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <form class="login-form">
+        <h2>Login Form</h2>
+        <div class="name">
+          <label for="name"></label>
+          <input type="text" name="name" id="name" placeholder="Name" />
+        </div>
+        <div class="login">
+          <label for="email"></label>
+          <input type="email" id="email" placeholder="Email" />
+        </div>
+        <div class="login">
+          <label for="password"></label>
+          <input type="password" id="email" placeholder="Password" />
+        </div>
+        <p>
+          <a href="#" style="color: white; text-decoration: none"
+            >Forgot Password?</a
+          >
+        </p>
+        <button class="login-but">Login</button>
+        <h4>Or Login with</h4>
+        <div class="button">
+          <button class="twi">Twitter</button>
+          <button class="ins">Instagram</button>
+        </div>
+        <h4>Don't have an account?<a href="#">Signup Now</a></h4>
+      </form>
+    </section>
+  </body>
+</html>
